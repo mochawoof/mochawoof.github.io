@@ -6,7 +6,7 @@ let repos = document.getElementById("repos");
         let allRepos = JSON.parse(t);
         allRepos.forEach((e) => {
           let url = e.html_url;
-          if (e.homepage != null) {
+          if (e.homepage != null && e.homepage != "") {
             url = e.homepage;
           } else if (e.has_pages) {
             url = "//" + username + ".github.io/" + e.name;
