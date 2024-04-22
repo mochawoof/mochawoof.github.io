@@ -5,6 +5,7 @@ Welcome to my GitHub page!!! You can find all my repos below:
   <thead>
     <tr>
       <th>Repo</th>
+      <th>Description</th>
       <th>License</th>
       <th>Language</th>
       <th>Watchers</th>
