@@ -2,7 +2,7 @@
 Welcome to my GitHub page!!! You can find all my repos below:
 
 <table>
-  <tbody>
+  <thead>
     <tr>
       <th>Repo</th>
       <th>License</th>
@@ -11,11 +11,11 @@ Welcome to my GitHub page!!! You can find all my repos below:
       <th>Stars</th>
       <th>Updated</th>
     </tr>
-    <span id="repos">
+  </thead>
+  <tbody id="repos">
       <tr>
         <td>Loading...</td>
       </tr>
-    </span>
   </tbody>
 </table>
 
