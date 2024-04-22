@@ -14,7 +14,7 @@ function makeElement(type, innerHTML, parent) {
 }
 
 //https://gist.github.com/PiJoules/7d78a95d53177468d479
-function sort(property) {
+function dynamicSort(property) {
     var sortOrder = 1;
     if(property[0] === "-") {
         sortOrder = -1;
