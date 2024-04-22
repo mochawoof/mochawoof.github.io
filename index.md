@@ -10,7 +10,7 @@ Welcome to my GitHub page!!! You can find all my repos below:
       <th>Language</th>
       <th>Watchers</th>
       <th>Stars</th>
-      <th>Updated</th>
+      <th>Updated &darr;</th>
     </tr>
   </thead>
   <tbody id="repos">
