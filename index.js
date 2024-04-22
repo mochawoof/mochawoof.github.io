@@ -4,6 +4,15 @@ let repos = document.getElementById("repos");
     if (r.status == 200) {
       r.text().then((t) => {
         let allRepos = JSON.parse(t);
+        allRepos.sort((a, b) => {
+          if (a.updated_at != null && b.updated_at != null) {
+            if (new Date(a.updated_at).getTime() > new Date(b.updated_at).getTime()) {
+              return -1;
+            }
+          } else {
+            return 0;
+          }
+        });
         allRepos.forEach((e) => {
           let url = e.html_url;
           if (e.homepage != null && e.homepage != "") {
