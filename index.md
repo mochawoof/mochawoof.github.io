@@ -8,7 +8,7 @@ Welcome to my GitHub page!!! You can find all my repos below:
     <th>Language</th>
     <th>Watchers</th>
     <th>Stars</th>
-    <th>Last Updated</th>
+    <th>Updated</th>
   </tr>
   <span id="repos">
     <tr>
