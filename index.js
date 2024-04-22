@@ -8,6 +8,8 @@ let repos = document.getElementById("repos");
           if (a.updated_at != null && b.updated_at != null) {
             if (new Date(a.updated_at).getTime() > new Date(b.updated_at).getTime()) {
               return -1;
+            } else {
+              return 1;
             }
           } else {
             return 0;
