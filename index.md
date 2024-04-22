@@ -20,3 +20,4 @@ Welcome to my GitHub page!!! You can find all my repos below:
 </table>
 
 <script src="/script.js"></script>
+<script src="/index.js"></script>
