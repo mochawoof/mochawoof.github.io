@@ -2,7 +2,7 @@
 Welcome to my GitHub page!!! You can find all my repos below:
 
 <ul id="repos">
-  <li>enable JS pls......</li>
+  <li>Loading...</li>
 </ul>
 
 <script src="/script.js"></script>
