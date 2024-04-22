@@ -18,6 +18,7 @@ let repos = document.getElementById("repos");
           if (url != null) {
             makeElement("tr", `
               <td><a href="${url}">${e.name}</a></td>
+              <td>${f(e.description)}</td>
               <td>${license}</td>
               <td>${f(e.language)}</td>
               <td>${e.watchers}</td>
