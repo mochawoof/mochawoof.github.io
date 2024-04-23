@@ -1,21 +1,10 @@
 let repos = document.getElementById("repos");
-  fetch("//api.github.com/users/" + username + "/repos?per_page=" + Number.MAX_SAFE_INTEGER).then((r) => {
+function refreshRepos() {
+  fetch("//api.github.com/users/" + username + "/repos?sort=updated&per_page=" + Number.MAX_SAFE_INTEGER).then((r) => {
   repos.innerHTML = "";
     if (r.status == 200) {
       r.text().then((t) => {
         let allRepos = JSON.parse(t);
-        //sort repos
-        allRepos.sort((a, b) => {
-          if (a.updated_at != null && b.updated_at != null) {
-            if (new Date(a.updated_at).getTime() > new Date(b.updated_at).getTime()) {
-              return -1;
-            } else {
-              return 1;
-            }
-          } else {
-            return 0;
-          }
-        });
         //for each repo
         allRepos.forEach((e) => {
           //get github url
@@ -55,3 +44,5 @@ let repos = document.getElementById("repos");
       makeElement("li", "Couldn't get repos!", repos);
     }
   });
+}
+refreshRepos();
