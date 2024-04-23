@@ -11,7 +11,7 @@ document.querySelectorAll("meta").forEach((e) => {
 //favicon
 let icon = document.createElement("link");
 icon.rel = "icon";
-icon.href = "//github.com/" + username + ".png";
+icon.href = "//github.com/" + username + ".png?size=48";
 document.head.appendChild(icon);
 
 function makeElement(type, innerHTML, parent) {
