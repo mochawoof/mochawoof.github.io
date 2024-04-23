@@ -9,11 +9,13 @@ function refreshRepos() {
         allRepos.forEach((e) => {
           //get github url
           let url = e.html_url;
-          //set it to its homepage if it has one
-          if (e.homepage != null && e.homepage != "") {
-            url = e.homepage;
-          } else if (e.has_pages) {
-            url = "//" + username + ".github.io/" + e.name;
+          //set it to its homepage if it has one, and if it isn't archived
+          if (!e.archived) {
+            if (e.homepage != null && e.homepage != "") {
+              url = e.homepage;
+            } else if (e.has_pages) {
+              url = "//" + username + ".github.io/" + e.name;
+            }
           }
           //get license
           let license = "N/A";
