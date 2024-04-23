@@ -20,5 +20,5 @@ Welcome to my GitHub page!!! You can find all my repos below:
   </tbody>
 </table>
 
-<script src="/script.js"></script>
+<script src="/all.js"></script>
 <script src="/index.js"></script>
