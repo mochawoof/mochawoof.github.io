@@ -26,9 +26,15 @@ let repos = document.getElementById("repos");
           if (e.license != null) {
             license = e.license.spdx_id;
           }
+          let title = e.full_name;
+          let style = "";
+          if (e.archived) {
+            title = "Archived";
+            style = "color: #b8860b;"
+          }
           if (url != null) {
             makeElement("tr", `
-              <td><a href="${url}">${e.name}</a></td>
+              <td><a style="${style}" href="${url}" title="${title}">${e.name}</a></td>
               <td>${f(e.description)}</td>
               <td>${license}</td>
               <td>${f(e.language)}</td>
