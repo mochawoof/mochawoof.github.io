@@ -1,5 +1,5 @@
-# home
-Welcome to my GitHub page!!! You can find all my repos below:
+# repos
+All my repos in one place!!
 
 <table>
   <thead>
