@@ -33,7 +33,6 @@ function refreshRepos() {
               <td>${f(e.description)}</td>
               <td>${license}</td>
               <td>${f(e.language)}</td>
-              <td>${e.watchers}</td>
               <td>${e.stargazers_count}</td>
               <td>${new Date(e.updated_at).toLocaleString()}</td>
             `, repos);
