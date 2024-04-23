@@ -8,7 +8,6 @@ All my repos in one place!!
       <th>Description</th>
       <th>License</th>
       <th>Language</th>
-      <th>Watchers</th>
       <th>Stars</th>
       <th>Updated</th>
     </tr>
@@ -21,4 +20,4 @@ All my repos in one place!!
 </table>
 
 <script src="/all.js"></script>
-<script src="/index.js"></script>
+<script src="/repos.js"></script>
