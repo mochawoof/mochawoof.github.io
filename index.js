@@ -1,6 +1,6 @@
 let repos = document.getElementById("repos");
-  repos.innerHTML = "";
   fetch("//api.github.com/users/" + username + "/repos?per_page=" + Number.MAX_SAFE_INTEGER).then((r) => {
+  repos.innerHTML = "";
     if (r.status == 200) {
       r.text().then((t) => {
         let allRepos = JSON.parse(t);
