@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  
+  <version>
+    <major>0</major>
+    <minor>10</minor>
+  </version>
+  
+  <!-- External way of controlling the game's saved data.   -->
+  <saveData>
+    <!-- Determines whether or not game data can be persisted to disk -->
+    <canSave>true</canSave>
+    <!-- Determines whether or not game data can be retried from disk -->
+    <canLoad>true</canLoad>
+  </saveData>
+  
+  <MSN>
+    <enabled>false</enabled>
+    <!-- This value should be in MILLISECONDS -->
+    <!-- The minimum value is 1000 -->
+    <loadBroadcastRate>3000</loadBroadcastRate>
+    <scoreBroadcastRate>5000</scoreBroadcastRate>
+  </MSN>
+  
+  <upsell>
+    <enabled>true</enabled>
+    <url>http://www.popcap.com/games/pvz/?cid=cws_pvz_CA</url>
+  </upsell>
+  
+</data>
